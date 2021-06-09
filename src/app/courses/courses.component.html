@@ -1,0 +1,40 @@
+<section  style="background-color: #fff;color:black">
+    <div class="container course">
+        <div class="filters">
+            <h2>Type</h2>
+            <mat-checkbox class="example-margin">web designing</mat-checkbox>
+            <mat-checkbox class="example-margin">competitive</mat-checkbox>
+            <h2>Level</h2>
+            <mat-checkbox class="example-margin">basic level</mat-checkbox>
+            <mat-checkbox class="example-margin">intermediate level</mat-checkbox>
+            <mat-checkbox class="example-margin">advance level</mat-checkbox>
+            <h2>Price</h2>
+            <mat-checkbox class="example-margin">discount</mat-checkbox>
+            <mat-checkbox class="example-margin">high price</mat-checkbox>
+            <mat-checkbox class="example-margin">low price</mat-checkbox>
+              
+        </div>
+        <div class="course-cards">
+            <mat-card class="example-card" style="height: auto;width: 300px;" *ngFor="let course of courses let i=index">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>{{course.coursename}}</mat-card-title>
+                  <mat-card-subtitle>{{course.type}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image style="height: 180px;width: 330px;" src="{{course.image}}" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                  <p>
+                    {{course.information}}
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button style="background-color: #047aed;color:white;padding-left:20px;padding-right:20px">Enroll</button>
+                  <!-- <button mat-button>SHARE</button> -->
+                </mat-card-actions>
+              </mat-card>
+              
+
+        </div>
+            
+    </div>
+</section>

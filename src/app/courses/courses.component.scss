@@ -1,0 +1,30 @@
+.course
+{
+    display: flex;
+    flex-direction: row;
+}
+.filters{
+    display: flex;
+    flex-direction: column;
+
+}
+.example-margin
+{
+    padding: 10px;
+}
+h2{
+    padding-top: 10px;
+}
+.course-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.example-card
+{
+    margin: 20px;
+    // transition: transform 0.4s ease-in-out;
+    animation: slideInFromTop 1s ease-in;
+}
